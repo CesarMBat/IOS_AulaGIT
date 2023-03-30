@@ -4,9 +4,24 @@
 
 }
 body{
-    background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 41%, rgba(197,142,228,1) 87%, rgba(207,180,231,1) 100%);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 90vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 h1{
     text-shadow: 2px 2px #fc0398;
 }
