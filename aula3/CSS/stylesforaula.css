@@ -36,7 +36,7 @@ a{
     font-size: 1.6rem;
 }
 a:hover{
-    text-decoration-line: underline;
+    filter: drop-shadow(10px 5px 4px #ff00c8);
     text-decoration-color: blueviolet;
     color: blueviolet;
 }
