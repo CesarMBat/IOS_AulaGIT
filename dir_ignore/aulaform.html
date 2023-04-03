@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script>
+
+    </script>
+</head>
+
+<body style="background-image: url(plane.png); background-repeat: no-repeat; background-size: cover;">
+    <header>
+        <h1 style="text-align: center; ">Lugares para Viajar</h1>
+        <hr>
+        <br>
+    </header>
+    <main>
+        <form method="post" action="mailto:cesar.morsoleto@gmail.com" id="fContato" >
+            <fieldset
+                style="border-radius: 5px; border: 1px inset #FFF01F; background-color: antiquewhite; width: 30vw; padding: 6px; margin-left: 15px;">
+                <label for="Nome">Nome:</label>
+                <input style="margin-bottom: 5px;" type="text" autocomplete="off" size="25" name="tName" id="Nome"
+                    required="required" />
+                <label for="LastName">Sobrenome:</label>
+                <input style="margin-bottom: 5px;" type="text" autocomplete="off" size="25" name="LastName"
+                    id="LastName" required="required" /><br>
+                <label for="Email">Email:</label>
+                <input style="margin-bottom: 5px;" type="email" autocomplete="off" size="67" name="Email" id="Email"
+                    required="required" /><br>
+
+                <input style="margin-bottom: 5px;" type="text" size="74" autocomplete="off" size="" name="fCPF" id="CPF"
+                    required="required" minlength="11" maxlength="11"
+                    placeholder="CPF apenas número Exemplo: 12345678910" /><br>
+            </fieldset>
+            <hr>
+            <fieldset
+                style="border-radius: 5px; border: 1px inset #FFF01F; background-color: antiquewhite; width: 20vw; padding: 6px; margin-left: 15px;">
+                <label>Quais Cidades dentre estas você gostaria de viajar para:</label><br>
+                <input type="checkbox" name="cidades1" id="cidades1" value="São Paulo">
+                <label for="cidades1">São Paulo</label><br>
+                <input type="checkbox" name="cidades2" id="cidades1" value="Rio de Janeiro">
+                <label for="cidades2">Rio de Janeiro</label><br>
+                <input type="checkbox" name="cidades3" id="cidades1" value="Palmas">
+                <label for="cidades3">Palmas</label><br>
+                <input type="checkbox" name="cidades4" id="cidades1" value="Maceió">
+                <label for="cidades4">Maceió</label><br>
+                <input type="checkbox" name="cidades5" id="cidades1" value="Recife">
+                <label for="cidades5">Recife</label>
+            </fieldset>
+            <br><br>
+            <!-- Lembre que os names ão de ser iguais ao for do label -->
+            <fieldset
+                style="border-radius: 5px; border: 1px inset #FFF01F; background-color: antiquewhite; width: 20vw; padding: 6px; margin-left: 15px;">
+                <p>Escolha 1 tipo de transporte:</p>
+                <input type="radio" name="transporte" id="transporte1">
+                <label for="transporte1">Ônibus</label><br>
+                <input type="radio" name="transporte" id="transporte2">
+                <label for="transporte2">Avião</label><br>
+                <input type="radio" name="transporte" id="transporte3">
+                <label for="transporte3">Carro</label><br>
+                <input type="radio" name="transporte" id="transporte4">
+                <label for="transporte4">BICICLETA FODAC</label>
+            </fieldset>
+            <br><br>
+            <fieldset
+                style="border-radius: 5px; border: 1px inset #FFF01F; background-color: antiquewhite; width: 20vw; padding: 6px; margin-left: 15px;">
+                <p>Selecione o seu gênero:</p>
+                <input type="radio" name="genero" id="gn1">
+                <label for="gn1">Masculino</label><br>
+                <input type="radio" name="genero" id="gn2">
+                <label for="gn2">Feminino</label><br>
+                <input type="radio" name="genero" id="gn3">
+                <label for="gn3">Prefiro não declarar</label><br><br>
+                <label for="pagar">Formas de Pagamento:</label>
+                <select name="pagar" id="pagar">
+                    <option value="first" disabled selected>Selecione</option>
+                    <option value="pix">Pix</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="credito">Crédito</option>
+                    <option value="debito">Débito</option>
+                    <option value="paypal">PayPal</option>
+                </select><br><br>
+            </fieldset><br><br>
+            <fieldset
+                style="border-radius: 5px; border: 1px inset #FFF01F; background-color: antiquewhite; width: 20vw; padding: 6px; margin-left: 15px;">
+                <label for="cCid">Escolha sua cidade na lista:</label><br><br>
+                <input id="cCid" name="tCid" autocomplete="on" list="cidade" placeholder="Sua Cidade">
+                <datalist id="cidade">
+                    <option value="São Paulo"></option>
+                    <option value="Campinas"></option>
+                    <option value="Santos"></option>
+                    <option value="Portão"></option>
+                    <option value="Mairipõra"></option>
+                </datalist><br><br>
+            </fieldset><br><br>
+            <fieldset
+                style="border-radius: 5px; border: 1px inset #FFF01F; background-color: antiquewhite; width: 20vw; height: 22vh; right: 25px; top: 20vh; position: fixed; padding: 6px; margin-left: 15px;">
+                Range <br>
+                <br> 0
+                <input type="range" name="vlr01" id="vlr01">
+                100 <br><br>
+                <textarea name="message" cols="30" rows="10" placeholder="Deixe sua mensagem aqui"></textarea>
+            </fieldset>
+
+            <div style="text-align: center;">
+                <input style="height: 5vh; width: 15vw; font-size: 28px; font-weight: 700; border-radius: 5px; background-color: antiquewhite; border: 1px inset #FFF01F;" type="submit">
+            </div>
+        </form>
+    </main>
+    <footer style="
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 12px;">
+        <small>Césinha gameplays esta testando snippet</small>
+        <a href="https://valorant.fandom.com/wiki/Oni_Collection"
+            style="float:right; margin-right: 25px; text-decoration: none;" target="_blank">&#128121;</a>
+    </footer>
+</body>
+
+</html>
